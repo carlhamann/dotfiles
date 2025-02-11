@@ -1,0 +1,62 @@
+{
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.editor.showTabs": "none",
+  "editor.tabSize": 2,
+  "editor.cursorSurroundingLines": 10,
+  "editor.lineNumbers": "relative",
+  "editor.suggest.insertMode": "replace",
+  "editor.formatOnSave": true,
+  "vim.useSystemClipboard": false,
+  "vim.leader": "<Space>",
+  "vim.handleKeys": {
+    "<C-d>": true,
+    "<C-p>": false,
+  },
+  // https://www.barbarianmeetscoding.com/boost-your-coding-fu-with-vscode-and-vim/elevating-your-worflow-with-custom-mappings/#easier-switching-between-splits
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<C-w>",
+        "m"
+      ],
+      "commands": [
+        "workbench.action.toggleMaximizeEditorGroup"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "t"
+      ],
+      "commands": [
+        "workbench.action.gotoSymbol",
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "I"
+      ],
+      "commands": [
+        "editor.action.goToImplementation"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "D"
+      ],
+      "commands": [
+        "editor.action.revealDefinitionAside"
+      ]
+    }
+  ],
+  "cmake.options.statusBarVisibility": "compact",
+  "cmake.configureOnOpen": true,
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+  ],
+  "continue.telemetryEnabled": false,
+  "cmakeFormat.exePath": "C:\\Users\\Admin\\AppData\\Roaming\\Python\\Python313\\Scripts\\cmake-format"
+}

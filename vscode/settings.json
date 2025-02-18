@@ -1,8 +1,12 @@
 {
   "workbench.colorTheme": "Default Dark+",
-  "workbench.editor.showTabs": "none",
+  "workbench.editor.showTabs": "multiple",
+  // "workbench.colorCustomizations": {
+  //   "tab.activeBackground": "#770000",
+  //   "tab.unfocusedActiveBackground": "#000033"
+  // },
   "editor.tabSize": 2,
-  "editor.cursorSurroundingLines": 10,
+  "editor.cursorSurroundingLines": 0,
   "editor.lineNumbers": "relative",
   "editor.suggest.insertMode": "replace",
   "editor.formatOnSave": true,

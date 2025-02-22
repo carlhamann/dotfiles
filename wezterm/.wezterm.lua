@@ -1,4 +1,12 @@
 local wezterm = require("wezterm")
+local mux = wezterm.mux
+
+-- Maximize window on startup
+--https://wezterm.org/config/lua/gui-events/gui-startup.html#__codelineno-1-1
+wezterm.on("gui-startup", function(cmd)
+	local tab, pane, window = mux.spawn_window(cmd or {})
+	window:gui_window():maximize()
+end)
 
 -- This will hold the configuration.
 local config = wezterm.config_builder()

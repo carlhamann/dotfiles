@@ -11,7 +11,7 @@ end)
 -- This will hold the configuration.
 local config = wezterm.config_builder()
 config.keys = {
-  { key = 'l', mods = 'ALT', action = wezterm.action.ShowLauncher },
+	{ key = "l", mods = "SHIFT|ALT", action = wezterm.action.ShowLauncher },
 }
 --
 -- config.font = wezterm.font_with_fallback("Inconsolata Nerd Font")
